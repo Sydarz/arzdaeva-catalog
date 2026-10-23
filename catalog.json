@@ -1,0 +1,1104 @@
+{
+  "schema": 1,
+  "rev": 3,
+  "game_patch": "Global S1 — 2026-10",
+  "published_at": "2026-10-23",
+  "server_tz": "Europe/Paris",
+  "resets": {
+    "daily": "07:00",
+    "weekly_day": "Wed"
+  },
+  "defaults": {
+    "respawn_window_min": 10
+  },
+  "game": {
+    "process": "Aion2.exe",
+    "window_class": "UnrealWindow"
+  },
+  "default_account": {
+    "server": "Ereshkigal",
+    "faction": "Asmodian",
+    "subscribed": true
+  },
+  "servers": {
+    "Asmodian": [
+      "Ereshkigal",
+      "Hadala",
+      "Eldra",
+      "Ulgorn",
+      "Munin",
+      "Odar",
+      "Zemurru",
+      "Kromede",
+      "Nai",
+      "Baba",
+      "Fafnir",
+      "Indnath",
+      "Agnita",
+      "Atiel",
+      "Tasin",
+      "Israphel",
+      "Zikel",
+      "Triniel",
+      "Lumiel",
+      "Marchutan",
+      "Azphel",
+      "Beritra",
+      "Nemon"
+    ],
+    "Elyos": [
+      "Vaizel",
+      "Nania",
+      "Tahabata",
+      "Luteros",
+      "Phernos",
+      "Daminu",
+      "Kasika",
+      "Bakarma",
+      "Tsenka",
+      "Kochi",
+      "Ishtar",
+      "Tiamat",
+      "Gauss",
+      "Lamuatan",
+      "Nathara",
+      "Siel",
+      "Nezekan",
+      "Kaisinel",
+      "Yustiel",
+      "Ariel",
+      "Fregion",
+      "Meslamtaeda",
+      "Hithanya"
+    ]
+  },
+  "regions": {
+    "Altgard": [
+      "Altgard"
+    ],
+    "Reshanta inférieure": [
+      "Reshanta inférieure",
+      "Lower Reshanta"
+    ],
+    "Événements": [],
+    "Verteron": [
+      "Verteron"
+    ]
+  },
+  "season": {
+    "id": "global-s1",
+    "name": "Saison 1",
+    "start": "2026-09-30T07:00:00Z",
+    "end": "2026-12-16T07:00:00Z",
+    "weekly_thresholds": []
+  },
+  "bosses": [
+    {
+      "id": "melted-danar",
+      "name": "Danar le fondu",
+      "name_en": "Melted Danar",
+      "region": "Altgard",
+      "zone": "Site du crash du Dredgion",
+      "level": 45,
+      "category": "Field",
+      "faction": "Asmodian",
+      "respawn": {
+        "kind": "AfterKill",
+        "minutes": 30
+      },
+      "default_favorite": true,
+      "ocr_aliases": [
+        "Molten Danar"
+      ]
+    },
+    {
+      "id": "black-warrior-aed",
+      "name": "Aed le guerrier noir",
+      "name_en": "Black Warrior Aed",
+      "region": "Altgard",
+      "zone": "Cimetière sans nom",
+      "level": 45,
+      "category": "Field",
+      "faction": "Asmodian",
+      "respawn": {
+        "kind": "AfterKill",
+        "minutes": 30
+      },
+      "default_favorite": true
+    },
+    {
+      "id": "faithful-rajit",
+      "name": "Rajit le fidèle",
+      "name_en": "Faithful Rajit",
+      "region": "Altgard",
+      "zone": "Poste de garde du sanctuaire",
+      "level": 45,
+      "category": "Field",
+      "faction": "Asmodian",
+      "respawn": {
+        "kind": "AfterKill",
+        "minutes": 30
+      },
+      "default_favorite": true
+    },
+    {
+      "id": "berserker-vargor",
+      "name": "Vargor le Berserker",
+      "name_en": "Berserker Vargor",
+      "region": "Altgard",
+      "zone": "Poste de garde du sanctuaire",
+      "level": 45,
+      "category": "Field",
+      "faction": "Asmodian",
+      "respawn": {
+        "kind": "AfterKill",
+        "minutes": 60
+      }
+    },
+    {
+      "id": "blood-warrior-lannar",
+      "name": "Lannar le guerrier de sang",
+      "name_en": "Blood Warrior Lannar",
+      "region": "Altgard",
+      "zone": "Forêt de Moslan",
+      "level": 45,
+      "category": "Field",
+      "faction": "Asmodian",
+      "respawn": {
+        "kind": "AfterKill",
+        "minutes": 90
+      },
+      "ocr_aliases": [
+        "Lannar le guerrier de sa"
+      ]
+    },
+    {
+      "id": "predator-garsan",
+      "name": "Garsan le Prédateur",
+      "name_en": "Predator Garsan",
+      "region": "Altgard",
+      "zone": "Forêt de Moslan",
+      "level": 45,
+      "category": "Field",
+      "faction": "Asmodian",
+      "respawn": {
+        "kind": "AfterKill",
+        "minutes": 120
+      }
+    },
+    {
+      "id": "deceiver-trid",
+      "name": "Trid la trompeuse",
+      "name_en": "Deceiver Trid",
+      "region": "Altgard",
+      "zone": "Urtumheim",
+      "level": 45,
+      "category": "Field",
+      "faction": "Asmodian",
+      "respawn": {
+        "kind": "AfterKill",
+        "minutes": 120
+      }
+    },
+    {
+      "id": "blue-wave-kelpina",
+      "name": "Kelpina la vague bleue",
+      "name_en": "Blue Wave Kelpina",
+      "region": "Altgard",
+      "zone": "Forêt de purification",
+      "level": 45,
+      "category": "Field",
+      "faction": "Asmodian",
+      "respawn": {
+        "kind": "AfterKill",
+        "minutes": 120
+      }
+    },
+    {
+      "id": "high-overseer-nutah",
+      "name": "Nutah le chef superviseur",
+      "name_en": "High Overseer Nutah",
+      "region": "Altgard",
+      "zone": "Dranactus",
+      "level": 45,
+      "category": "Field",
+      "faction": "Asmodian",
+      "respawn": {
+        "kind": "AfterKill",
+        "minutes": 120
+      },
+      "ocr_aliases": [
+        "Grand Supervisor Nutah",
+        "Nutah le chef supervise"
+      ]
+    },
+    {
+      "id": "advisor-resana",
+      "name": "Resana le conseiller",
+      "name_en": "Advisor Resana",
+      "region": "Altgard",
+      "zone": "Dranactus",
+      "level": 45,
+      "category": "Field",
+      "faction": "Asmodian",
+      "respawn": {
+        "kind": "AfterKill",
+        "minutes": 180
+      }
+    },
+    {
+      "id": "linx",
+      "name": "Linx le chef des opérations spéciales",
+      "name_en": "Special Operations Leader Linx",
+      "region": "Altgard",
+      "zone": "Ruines de Basfelt",
+      "level": 45,
+      "category": "Field",
+      "faction": "Asmodian",
+      "respawn": {
+        "kind": "AfterKill",
+        "minutes": 180
+      },
+      "ocr_aliases": [
+        "Special Operations Chief Linx",
+        "Linx le chef des opérati"
+      ]
+    },
+    {
+      "id": "addicted-hardirun",
+      "name": "Hardirun l'intoxiqué",
+      "name_en": "Addicted Hardirun",
+      "region": "Altgard",
+      "zone": "Cimetière de Pafnite",
+      "level": 45,
+      "category": "Field",
+      "faction": "Asmodian",
+      "respawn": {
+        "kind": "AfterKill",
+        "minutes": 180
+      }
+    },
+    {
+      "id": "veteran-shujakan",
+      "name": "Shujakan le vétéran",
+      "name_en": "Veteran Shujakan",
+      "region": "Altgard",
+      "zone": "Village de la Griffe noire",
+      "level": 45,
+      "category": "Field",
+      "faction": "Asmodian",
+      "respawn": {
+        "kind": "AfterKill",
+        "minutes": 180
+      }
+    },
+    {
+      "id": "desecrator-newbold",
+      "name": "Newbold le profanateur",
+      "name_en": "Desecrator Newbold",
+      "region": "Altgard",
+      "zone": "Ruines de Basfelt",
+      "level": 45,
+      "category": "Field",
+      "faction": "Asmodian",
+      "respawn": {
+        "kind": "AfterKill",
+        "minutes": 240
+      }
+    },
+    {
+      "id": "specter-archon-axios",
+      "name": "Axios l'archon des âmes égarées",
+      "name_en": "Specter Archon Axios",
+      "region": "Altgard",
+      "zone": "Ruines de Basfelt",
+      "level": 45,
+      "category": "Field",
+      "faction": "Asmodian",
+      "respawn": {
+        "kind": "AfterKill",
+        "minutes": 240
+      },
+      "ocr_aliases": [
+        "Spectral Archon Axios",
+        "Axios l'archon des âmes"
+      ]
+    },
+    {
+      "id": "executioner-barthien",
+      "name": "Barthien le bourreau",
+      "name_en": "Executioner Barthien",
+      "region": "Altgard",
+      "zone": "Canyon de Gribade Ouest",
+      "level": 45,
+      "category": "Field",
+      "faction": "Asmodian",
+      "respawn": {
+        "kind": "AfterKill",
+        "minutes": 240
+      }
+    },
+    {
+      "id": "visionary-karuka",
+      "name": "Karuka le visionnaire",
+      "name_en": "Visionary Karuka",
+      "region": "Altgard",
+      "zone": "Village de la Griffe noire",
+      "level": 45,
+      "category": "Field",
+      "faction": "Asmodian",
+      "respawn": {
+        "kind": "AfterKill",
+        "minutes": 240
+      }
+    },
+    {
+      "id": "drakan-guruta",
+      "name": "Guruta l'arme de troupe Drakan",
+      "name_en": "Drakan Battalion Weapon Guruta",
+      "region": "Altgard",
+      "zone": "Canyon de Gribade Est",
+      "level": 45,
+      "category": "Field",
+      "faction": "Asmodian",
+      "respawn": {
+        "kind": "AfterKill",
+        "minutes": 360
+      },
+      "ocr_aliases": [
+        "Guruta, Drakan Battalion Weapon",
+        "Guruta l'arme de troup"
+      ]
+    },
+    {
+      "id": "dark-shadow-vishwada",
+      "name": "Vishwada le ténébreux",
+      "name_en": "Dark Shadow Vishwada",
+      "region": "Altgard",
+      "zone": "Forteresse de Ragta",
+      "level": 45,
+      "category": "Field",
+      "faction": "Asmodian",
+      "respawn": {
+        "kind": "AfterKill",
+        "minutes": 360
+      },
+      "ocr_aliases": [
+        "Black Shadow Vishwada"
+      ]
+    },
+    {
+      "id": "sharp-shylak",
+      "name": "Shylak l'acéré",
+      "name_en": "Sharp Shylak",
+      "region": "Altgard",
+      "zone": "Place d'Impetusium",
+      "level": 45,
+      "category": "Field",
+      "faction": "Asmodian",
+      "respawn": {
+        "kind": "AfterKill",
+        "minutes": 360
+      }
+    },
+    {
+      "id": "silent-dartan",
+      "name": "Dartan la silencieuse",
+      "name_en": "Silent Dartan",
+      "region": "Altgard",
+      "zone": "Forêt de purification",
+      "level": 48,
+      "category": "Field",
+      "faction": "Asmodian",
+      "respawn": {
+        "kind": "AfterKill",
+        "minutes": 360
+      }
+    },
+    {
+      "id": "soul-ruler-kashapa",
+      "name": "Kashapa le dominateur des âmes",
+      "name_en": "Soul Ruler Kashapa",
+      "region": "Altgard",
+      "zone": "Cimetière de Pafnite",
+      "level": 48,
+      "category": "Field",
+      "faction": "Asmodian",
+      "respawn": {
+        "kind": "AfterKill",
+        "minutes": 360
+      },
+      "ocr_aliases": [
+        "Kashapa le dominateur"
+      ]
+    },
+    {
+      "id": "high-commander-lagta",
+      "name": "Haut Commandant Lagta",
+      "name_en": "High Commander Lagta",
+      "region": "Altgard",
+      "zone": "Forteresse de Ragta",
+      "level": 48,
+      "category": "Field",
+      "faction": "Asmodian",
+      "respawn": {
+        "kind": "AfterKill",
+        "minutes": 720
+      }
+    },
+    {
+      "id": "immortal-gartua",
+      "name": "Gartua de l'immortalité",
+      "name_en": "Immortal Gartua",
+      "region": "Altgard",
+      "zone": "Île de l'immortalité",
+      "level": 51,
+      "category": "Field",
+      "faction": "Asmodian",
+      "respawn": {
+        "kind": "AfterKill",
+        "minutes": 720
+      }
+    },
+    {
+      "id": "argo-spirit-king",
+      "name": "Agro le roi des esprits",
+      "name_en": "Argo, the Spirit King",
+      "region": "Reshanta inférieure",
+      "zone": "Aile droite de Siel",
+      "category": "Abyss",
+      "faction": "Both",
+      "respawn": {
+        "kind": "AfterKill",
+        "minutes": 720
+      }
+    },
+    {
+      "id": "watcher-kaira",
+      "name": "Kaira la veilleuse",
+      "name_en": "Watcher Kaira",
+      "region": "Reshanta inférieure",
+      "category": "Abyss",
+      "faction": "Both",
+      "respawn": {
+        "kind": "Schedule",
+        "tz": "server",
+        "duration_min": 30,
+        "rules": [
+          {
+            "type": "every",
+            "minutes": 180,
+            "anchor": "01:00"
+          }
+        ]
+      },
+      "default_favorite": true
+    },
+    {
+      "id": "guardian-nahma",
+      "name": "Nahma le seigneur gardien",
+      "name_en": "Guardian Lord Nahma",
+      "region": "Reshanta inférieure",
+      "category": "Abyss",
+      "faction": "Both",
+      "respawn": {
+        "kind": "Schedule",
+        "tz": "server",
+        "rules": [
+          {
+            "type": "weekly",
+            "days": [
+              "Fri",
+              "Sun"
+            ],
+            "time": "21:00"
+          }
+        ]
+      },
+      "default_favorite": true,
+      "ocr_aliases": [
+        "Nahma le seigneur gard"
+      ]
+    },
+    {
+      "id": "executor-tamasa",
+      "name": "Tamasa l'exécuteur",
+      "region": "Reshanta inférieure",
+      "category": "Abyss",
+      "faction": "Both",
+      "respawn": {
+        "kind": "Schedule",
+        "tz": "server",
+        "rules": [
+          {
+            "type": "weekly",
+            "days": [
+              "Mon",
+              "Thu",
+              "Sat"
+            ],
+            "time": "21:30"
+          }
+        ]
+      },
+      "default_favorite": true
+    },
+    {
+      "id": "executor-agro",
+      "name": "Agro exécuteur",
+      "region": "Reshanta inférieure",
+      "category": "Abyss",
+      "faction": "Both",
+      "respawn": {
+        "kind": "Schedule",
+        "tz": "server",
+        "rules": [
+          {
+            "type": "weekly",
+            "days": [
+              "Mon",
+              "Thu",
+              "Sat"
+            ],
+            "time": "21:30"
+          }
+        ]
+      },
+      "default_favorite": true
+    },
+    {
+      "id": "executor-kaira",
+      "name": "Kaira exécutrice",
+      "region": "Reshanta inférieure",
+      "category": "Abyss",
+      "faction": "Both",
+      "respawn": {
+        "kind": "Schedule",
+        "tz": "server",
+        "rules": [
+          {
+            "type": "weekly",
+            "days": [
+              "Mon",
+              "Thu",
+              "Sat"
+            ],
+            "time": "21:30"
+          }
+        ]
+      },
+      "default_favorite": true
+    },
+    {
+      "id": "verteron-neikel",
+      "name": "Neikel de l'est",
+      "region": "Verteron",
+      "category": "Field",
+      "faction": "Elyos",
+      "respawn": {
+        "kind": "AfterKill"
+      }
+    },
+    {
+      "id": "verteron-kutar",
+      "name": "Kutar le putréfié",
+      "region": "Verteron",
+      "category": "Field",
+      "faction": "Elyos",
+      "respawn": {
+        "kind": "AfterKill"
+      }
+    },
+    {
+      "id": "verteron-kernon",
+      "name": "Kernon de l'ouest",
+      "region": "Verteron",
+      "category": "Field",
+      "faction": "Elyos",
+      "respawn": {
+        "kind": "AfterKill"
+      }
+    },
+    {
+      "id": "verteron-kusan",
+      "name": "Kusan le Berserker",
+      "region": "Verteron",
+      "category": "Field",
+      "faction": "Elyos",
+      "respawn": {
+        "kind": "AfterKill"
+      }
+    },
+    {
+      "id": "verteron-garshim",
+      "name": "Garshim le ritualiste",
+      "region": "Verteron",
+      "category": "Field",
+      "faction": "Elyos",
+      "respawn": {
+        "kind": "AfterKill"
+      }
+    },
+    {
+      "id": "verteron-teegant",
+      "name": "Teegant le garde du corps",
+      "region": "Verteron",
+      "category": "Field",
+      "faction": "Elyos",
+      "respawn": {
+        "kind": "AfterKill"
+      },
+      "ocr_aliases": [
+        "Teegant le garde du cor"
+      ]
+    },
+    {
+      "id": "verteron-korin",
+      "name": "Korin en floraison",
+      "region": "Verteron",
+      "category": "Field",
+      "faction": "Elyos",
+      "respawn": {
+        "kind": "AfterKill"
+      }
+    },
+    {
+      "id": "verteron-saursus",
+      "name": "Saursus enragée",
+      "region": "Verteron",
+      "category": "Field",
+      "faction": "Elyos",
+      "respawn": {
+        "kind": "AfterKill"
+      }
+    },
+    {
+      "id": "verteron-pnyn",
+      "name": "Pnyn aux crocs sanglants",
+      "region": "Verteron",
+      "category": "Field",
+      "faction": "Elyos",
+      "respawn": {
+        "kind": "AfterKill"
+      }
+    },
+    {
+      "id": "verteron-layla",
+      "name": "Layla l'apostate",
+      "region": "Verteron",
+      "category": "Field",
+      "faction": "Elyos",
+      "respawn": {
+        "kind": "AfterKill"
+      }
+    },
+    {
+      "id": "verteron-lawa",
+      "name": "Lawa aux tentacules noires",
+      "region": "Verteron",
+      "category": "Field",
+      "faction": "Elyos",
+      "respawn": {
+        "kind": "AfterKill"
+      },
+      "ocr_aliases": [
+        "Lawa aux tentacules no"
+      ]
+    },
+    {
+      "id": "verteron-kasia",
+      "name": "Kasia du rêve illusoire",
+      "region": "Verteron",
+      "category": "Field",
+      "faction": "Elyos",
+      "respawn": {
+        "kind": "AfterKill"
+      }
+    },
+    {
+      "id": "verteron-demiros",
+      "name": "Centurion Demiros",
+      "region": "Verteron",
+      "category": "Field",
+      "faction": "Elyos",
+      "respawn": {
+        "kind": "AfterKill"
+      }
+    },
+    {
+      "id": "verteron-ansas",
+      "name": "Ansas sacré",
+      "region": "Verteron",
+      "category": "Field",
+      "faction": "Elyos",
+      "respawn": {
+        "kind": "AfterKill"
+      }
+    },
+    {
+      "id": "verteron-moshav",
+      "name": "Moshav le superviseur de la récolte",
+      "region": "Verteron",
+      "category": "Field",
+      "faction": "Elyos",
+      "respawn": {
+        "kind": "AfterKill"
+      },
+      "ocr_aliases": [
+        "Moshav le superviseur d"
+      ]
+    },
+    {
+      "id": "verteron-knash",
+      "name": "K'nash la sentinelle",
+      "region": "Verteron",
+      "category": "Field",
+      "faction": "Elyos",
+      "respawn": {
+        "kind": "AfterKill"
+      }
+    },
+    {
+      "id": "verteron-aulla",
+      "name": "Aulla l'érudit",
+      "region": "Verteron",
+      "category": "Field",
+      "faction": "Elyos",
+      "respawn": {
+        "kind": "AfterKill"
+      }
+    },
+    {
+      "id": "verteron-aullamu",
+      "name": "Aullamu le guerrier de la forêt",
+      "region": "Verteron",
+      "category": "Field",
+      "faction": "Elyos",
+      "respawn": {
+        "kind": "AfterKill"
+      },
+      "ocr_aliases": [
+        "Aullamu le guerrier de l"
+      ]
+    },
+    {
+      "id": "verteron-taulo",
+      "name": "Taulo le traqueur",
+      "region": "Verteron",
+      "category": "Field",
+      "faction": "Elyos",
+      "respawn": {
+        "kind": "AfterKill"
+      }
+    },
+    {
+      "id": "verteron-setram",
+      "name": "Setram le chercheur",
+      "region": "Verteron",
+      "category": "Field",
+      "faction": "Elyos",
+      "respawn": {
+        "kind": "AfterKill"
+      }
+    },
+    {
+      "id": "verteron-silent-dartan",
+      "name": "Dartan la silencieuse",
+      "region": "Verteron",
+      "category": "Field",
+      "faction": "Elyos",
+      "respawn": {
+        "kind": "AfterKill",
+        "minutes": 360
+      }
+    },
+    {
+      "id": "verteron-soul-ruler-kashapa",
+      "name": "Kashapa le dominateur des âmes",
+      "region": "Verteron",
+      "category": "Field",
+      "faction": "Elyos",
+      "respawn": {
+        "kind": "AfterKill",
+        "minutes": 360
+      },
+      "ocr_aliases": [
+        "Kashapa le dominateur"
+      ]
+    },
+    {
+      "id": "verteron-high-commander-lagta",
+      "name": "Haut Commandant Lagta",
+      "region": "Verteron",
+      "category": "Field",
+      "faction": "Elyos",
+      "respawn": {
+        "kind": "AfterKill",
+        "minutes": 720
+      }
+    },
+    {
+      "id": "shugo-festival-event",
+      "name": "Festival Shugo",
+      "region": "Événements",
+      "category": "Event",
+      "faction": "Both",
+      "respawn": {
+        "kind": "Schedule",
+        "tz": "server",
+        "duration_min": 10,
+        "rules": [
+          {
+            "type": "every",
+            "minutes": 60,
+            "anchor": "00:00"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dimensional-invasion-event",
+      "name": "Invasion dimensionnelle",
+      "region": "Événements",
+      "category": "Event",
+      "faction": "Both",
+      "respawn": {
+        "kind": "Schedule",
+        "tz": "server",
+        "duration_min": 10,
+        "rules": [
+          {
+            "type": "every",
+            "minutes": 60,
+            "anchor": "00:30"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spacetime-rift",
+      "name": "Faille spatio-temporelle",
+      "region": "Événements",
+      "category": "Event",
+      "faction": "Both",
+      "respawn": {
+        "kind": "Schedule",
+        "tz": "server",
+        "duration_min": 10,
+        "rules": [
+          {
+            "type": "every",
+            "minutes": 180,
+            "anchor": "02:00"
+          }
+        ]
+      },
+      "default_favorite": true
+    },
+    {
+      "id": "artifact-siege",
+      "name": "Siège des artefacts",
+      "region": "Événements",
+      "category": "Event",
+      "faction": "Both",
+      "respawn": {
+        "kind": "Schedule",
+        "tz": "server",
+        "duration_min": 30,
+        "rules": [
+          {
+            "type": "weekly",
+            "days": [
+              "Mon",
+              "Thu",
+              "Sat"
+            ],
+            "time": "21:00"
+          }
+        ]
+      },
+      "default_favorite": true
+    },
+    {
+      "id": "arena-tactics",
+      "name": "Arène tactique 10v10",
+      "region": "Événements",
+      "category": "Event",
+      "faction": "Both",
+      "respawn": {
+        "kind": "Schedule",
+        "tz": "server",
+        "rules": [
+          {
+            "type": "daily",
+            "times": [
+              "11:00"
+            ],
+            "duration_min": 180
+          },
+          {
+            "type": "daily",
+            "times": [
+              "19:00"
+            ],
+            "duration_min": 120
+          }
+        ]
+      }
+    }
+  ],
+  "tasks": [
+    {
+      "id": "duty-missions",
+      "name": "Missions de devoir",
+      "period": "Daily",
+      "target_hint": 5,
+      "scope": "Account"
+    },
+    {
+      "id": "nightmare",
+      "name": "Cauchemar",
+      "period": "Daily",
+      "target_hint": 2,
+      "scope": "Character"
+    },
+    {
+      "id": "odyle-spent",
+      "name": "Énergie d'Odyle dépensée",
+      "period": "Daily",
+      "scope": "Character"
+    },
+    {
+      "id": "shugo-festival",
+      "name": "Festival Shugo (clés utilisées)",
+      "period": "Daily",
+      "target_hint": 3,
+      "scope": "Account"
+    },
+    {
+      "id": "dimensional-invasion",
+      "name": "Invasion dimensionnelle",
+      "period": "Daily",
+      "scope": "Account"
+    },
+    {
+      "id": "unknown-fissure",
+      "name": "Fissure inconnue",
+      "period": "Daily",
+      "target_hint": 2,
+      "scope": "Account"
+    },
+    {
+      "id": "conquest",
+      "name": "Conquête",
+      "period": "Daily",
+      "scope": "Character"
+    },
+    {
+      "id": "transcendence",
+      "name": "Transcendance (iLvl 1600+)",
+      "period": "Daily",
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "balaur-fortress",
+      "name": "Forteresse balaur abandonnée",
+      "period": "Daily",
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "fafnium-lab",
+      "name": "Laboratoire de Fafnium",
+      "period": "Daily",
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "ascension-trial",
+      "name": "Épreuve d'Ascension",
+      "period": "Weekly",
+      "target_hint": 3,
+      "scope": "Character"
+    },
+    {
+      "id": "subjugation",
+      "name": "Subjugation",
+      "period": "Weekly",
+      "target_hint": 3,
+      "scope": "Character"
+    },
+    {
+      "id": "raid-ludra",
+      "name": "Raid : Forge abyssale (Ludra)",
+      "period": "Weekly",
+      "target_hint": 4,
+      "scope": "Character"
+    },
+    {
+      "id": "raid-muspel",
+      "name": "Raid : Calice de Muspel",
+      "period": "Weekly",
+      "target_hint": 4,
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "raid-decontamination",
+      "name": "Raid : Installation de décontamination corrodée",
+      "period": "Weekly",
+      "target_hint": 4,
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "battlefield",
+      "name": "Champ de bataille (victoires)",
+      "period": "Weekly",
+      "target_hint": 3,
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "exploration",
+      "name": "Expéditions d'exploration",
+      "period": "Weekly",
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "daeva-pass",
+      "name": "Daeva Pass (EXP hebdo)",
+      "period": "Weekly",
+      "scope": "Character"
+    },
+    {
+      "id": "season-missions",
+      "name": "Récompense hebdo des missions de saison",
+      "period": "Weekly",
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "subscription-shop",
+      "name": "Boutique d'abonnement",
+      "period": "Weekly",
+      "scope": "Account",
+      "requires_subscription": true
+    }
+  ],
+  "archived": {
+    "bosses": [],
+    "tasks": []
+  },
+  "renamed": {
+    "bosses": {},
+    "tasks": {}
+  },
+  "changelog": [
+    "rev 1 : catalogue initial (noms français des boss d'Altgard, anglais conservés pour le scan)",
+    "rev 2 : noms français lus en jeu (Altgard, Reshanta inférieure), début des noms coupés en alias OCR, boss de Verteron (Élyséens)",
+    "rev 3 : boss de Reshanta moyenne retirés (pas encore en version globale)"
+  ]
+}
