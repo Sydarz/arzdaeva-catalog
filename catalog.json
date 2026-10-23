@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "rev": 3,
+  "rev": 1,
   "game_patch": "Global S1 — 2026-10",
   "published_at": "2026-10-23",
   "server_tz": "Europe/Paris",
@@ -106,7 +106,6 @@
         "kind": "AfterKill",
         "minutes": 30
       },
-      "default_favorite": true,
       "ocr_aliases": [
         "Molten Danar"
       ]
@@ -123,8 +122,7 @@
       "respawn": {
         "kind": "AfterKill",
         "minutes": 30
-      },
-      "default_favorite": true
+      }
     },
     {
       "id": "faithful-rajit",
@@ -138,8 +136,7 @@
       "respawn": {
         "kind": "AfterKill",
         "minutes": 30
-      },
-      "default_favorite": true
+      }
     },
     {
       "id": "berserker-vargor",
@@ -471,7 +468,8 @@
       "respawn": {
         "kind": "AfterKill",
         "minutes": 720
-      }
+      },
+      "default_favorite": true
     },
     {
       "id": "watcher-kaira",
@@ -540,8 +538,7 @@
             "time": "21:30"
           }
         ]
-      },
-      "default_favorite": true
+      }
     },
     {
       "id": "executor-agro",
@@ -563,8 +560,7 @@
             "time": "21:30"
           }
         ]
-      },
-      "default_favorite": true
+      }
     },
     {
       "id": "executor-kaira",
@@ -586,8 +582,7 @@
             "time": "21:30"
           }
         ]
-      },
-      "default_favorite": true
+      }
     },
     {
       "id": "verteron-neikel",
@@ -854,7 +849,8 @@
             "anchor": "00:00"
           }
         ]
-      }
+      },
+      "default_favorite": true
     },
     {
       "id": "dimensional-invasion-event",
@@ -873,7 +869,8 @@
             "anchor": "00:30"
           }
         ]
-      }
+      },
+      "default_favorite": true
     },
     {
       "id": "spacetime-rift",
@@ -944,13 +941,14 @@
             "duration_min": 120
           }
         ]
-      }
+      },
+      "default_favorite": true
     }
   ],
   "tasks": [
     {
       "id": "duty-missions",
-      "name": "Missions de devoir",
+      "name": "Vocations : missions",
       "period": "Daily",
       "target_hint": 5,
       "scope": "Account"
@@ -970,7 +968,7 @@
     },
     {
       "id": "shugo-festival",
-      "name": "Festival Shugo (clés utilisées)",
+      "name": "Festival des Shugos",
       "period": "Daily",
       "target_hint": 3,
       "scope": "Account"
@@ -982,90 +980,70 @@
       "scope": "Account"
     },
     {
-      "id": "unknown-fissure",
-      "name": "Fissure inconnue",
+      "id": "attendance",
+      "name": "Registre de présence",
       "period": "Daily",
-      "target_hint": 2,
+      "scope": "Character"
+    },
+    {
+      "id": "unknown-fissure",
+      "name": "Donjons quotidiens",
+      "period": "Weekly",
+      "target_hint": 14,
       "scope": "Account"
     },
     {
-      "id": "conquest",
-      "name": "Conquête",
-      "period": "Daily",
+      "id": "ascension-trial",
+      "name": "Épreuve d'Éveil",
+      "period": "Weekly",
+      "target_hint": 3,
       "scope": "Character"
     },
     {
       "id": "transcendence",
-      "name": "Transcendance (iLvl 1600+)",
-      "period": "Daily",
-      "scope": "Character",
-      "default_visible": false
-    },
-    {
-      "id": "balaur-fortress",
-      "name": "Forteresse balaur abandonnée",
-      "period": "Daily",
-      "scope": "Character",
-      "default_visible": false
-    },
-    {
-      "id": "fafnium-lab",
-      "name": "Laboratoire de Fafnium",
-      "period": "Daily",
-      "scope": "Character",
-      "default_visible": false
-    },
-    {
-      "id": "ascension-trial",
-      "name": "Épreuve d'Ascension",
+      "name": "Transcendance",
       "period": "Weekly",
       "target_hint": 3,
       "scope": "Character"
     },
     {
-      "id": "subjugation",
-      "name": "Subjugation",
+      "id": "supply-request",
+      "name": "Requête de ravitaillement",
+      "period": "Weekly",
+      "scope": "Character"
+    },
+    {
+      "id": "abyss",
+      "name": "Abysse",
+      "period": "Weekly",
+      "scope": "Character"
+    },
+    {
+      "id": "arena",
+      "name": "Arène",
+      "period": "Weekly",
+      "scope": "Character"
+    },
+    {
+      "id": "arena-tactics-weekly",
+      "name": "Arène tactique 10v10",
       "period": "Weekly",
       "target_hint": 3,
       "scope": "Character"
     },
     {
-      "id": "raid-ludra",
-      "name": "Raid : Forge abyssale (Ludra)",
+      "id": "vocation-abyss-orders",
+      "name": "Vocations : consignes (Abysses)",
       "period": "Weekly",
-      "target_hint": 4,
-      "scope": "Character"
-    },
-    {
-      "id": "raid-muspel",
-      "name": "Raid : Calice de Muspel",
-      "period": "Weekly",
-      "target_hint": 4,
-      "scope": "Character",
-      "default_visible": false
-    },
-    {
-      "id": "raid-decontamination",
-      "name": "Raid : Installation de décontamination corrodée",
-      "period": "Weekly",
-      "target_hint": 4,
-      "scope": "Character",
-      "default_visible": false
+      "target_hint": 10,
+      "scope": "Account"
     },
     {
       "id": "battlefield",
-      "name": "Champ de bataille (victoires)",
+      "name": "Champ de bataille",
       "period": "Weekly",
       "target_hint": 3,
-      "scope": "Character",
-      "default_visible": false
-    },
-    {
-      "id": "exploration",
-      "name": "Expéditions d'exploration",
-      "period": "Weekly",
-      "scope": "Character",
-      "default_visible": false
+      "scope": "Character"
     },
     {
       "id": "daeva-pass",
@@ -1075,10 +1053,9 @@
     },
     {
       "id": "season-missions",
-      "name": "Récompense hebdo des missions de saison",
+      "name": "Missions de saison (récompense hebdo)",
       "period": "Weekly",
-      "scope": "Character",
-      "default_visible": false
+      "scope": "Character"
     },
     {
       "id": "subscription-shop",
@@ -1086,6 +1063,862 @@
       "period": "Weekly",
       "scope": "Account",
       "requires_subscription": true
+    },
+    {
+      "id": "sm-w-abyss-kill-players",
+      "name": "Tuer des joueurs du camp adverse",
+      "period": "Weekly",
+      "group_label": "Abysse",
+      "target_hint": 20,
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "sm-w-abyss-hunt",
+      "name": "Chasser des monstres dans l'Abysse",
+      "period": "Weekly",
+      "group_label": "Abysse",
+      "target_hint": 2000,
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "sm-w-abyss-kaira",
+      "name": "Éliminer Kaira la veilleuse",
+      "period": "Weekly",
+      "group_label": "Abysse",
+      "target_hint": 10,
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "sm-w-abyss-agro",
+      "name": "Éliminer Agro le roi des esprits",
+      "period": "Weekly",
+      "group_label": "Abysse",
+      "target_hint": 3,
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "sm-w-abyss-siege",
+      "name": "Participer au Siège d'artefact",
+      "period": "Weekly",
+      "group_label": "Abysse",
+      "target_hint": 2,
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "sm-w-abyss-nahma",
+      "name": "Éliminer Nahma le seigneur gardien",
+      "period": "Weekly",
+      "group_label": "Abysse",
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "sm-w-abyss-siege-win",
+      "name": "Remporter un Siège d'artefact",
+      "period": "Weekly",
+      "group_label": "Abysse",
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "sm-w-abyss-hour",
+      "name": "Passer 1 heure dans l'Abysse",
+      "period": "Weekly",
+      "group_label": "Abysse",
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "sm-w-abyss-dominator",
+      "name": "Éliminer un Dominateur de l'Abysse",
+      "period": "Weekly",
+      "group_label": "Abysse",
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "sm-w-arena-wins",
+      "name": "Remporter des victoires dans l'Arène",
+      "period": "Weekly",
+      "group_label": "Arène",
+      "target_hint": 5,
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "sm-w-arena-play",
+      "name": "Participer à l'Arène",
+      "period": "Weekly",
+      "group_label": "Arène",
+      "target_hint": 10,
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "sm-w-trans-clear",
+      "name": "Terminer le donjon de la Transcendance",
+      "period": "Weekly",
+      "group_label": "Transcendance",
+      "target_hint": 10,
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "sm-w-trans-no-death",
+      "name": "Terminer le donjon de la Transcendance sans mourir",
+      "period": "Weekly",
+      "group_label": "Transcendance",
+      "target_hint": 3,
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "sm-w-trans-fast",
+      "name": "Terminer le donjon de la Transcendance en moins de 15 min",
+      "period": "Weekly",
+      "group_label": "Transcendance",
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "sm-w-trans-minibosses",
+      "name": "Éliminer des mini-boss dans le donjon de la Transcendance",
+      "period": "Weekly",
+      "group_label": "Transcendance",
+      "target_hint": 10,
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "sm-w-trans-arcana",
+      "name": "Extraire des arcanes",
+      "period": "Weekly",
+      "group_label": "Transcendance",
+      "target_hint": 10,
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "sm-w-nightmare-boss",
+      "name": "Éliminer le boss du Cauchemar",
+      "period": "Weekly",
+      "group_label": "Cauchemar",
+      "target_hint": 10,
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "sm-w-nightmare-fragments",
+      "name": "Obtenir des Fragments oniriques",
+      "period": "Weekly",
+      "group_label": "Cauchemar",
+      "target_hint": 3000,
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "sm-w-nightmare-2min",
+      "name": "Redresseur de torts : boss du Cauchemar en moins de 2 min",
+      "period": "Weekly",
+      "group_label": "Cauchemar",
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "sm-w-nightmare-1min",
+      "name": "Repos éternel : boss du Cauchemar en moins de 1 min",
+      "period": "Weekly",
+      "group_label": "Cauchemar",
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "sm-w-nightmare-3min",
+      "name": "3 minutes de cauchemar : boss du Cauchemar en moins de 3 min",
+      "period": "Weekly",
+      "group_label": "Cauchemar",
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "sm-w-challenge-scrolls",
+      "name": "Terminer des parchemins de consigne des Abysses",
+      "period": "Weekly",
+      "group_label": "Défi",
+      "target_hint": 10,
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "sm-w-challenge-trial",
+      "name": "Terminer l'Épreuve d'Éveil",
+      "period": "Weekly",
+      "group_label": "Défi",
+      "target_hint": 3,
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "sm-w-challenge-officers",
+      "name": "Tuer des officiers adverses (1 à 5 étoiles)",
+      "period": "Weekly",
+      "group_label": "Défi",
+      "target_hint": 20,
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "sm-w-challenge-soldiers",
+      "name": "Tuer des soldats adverses (1re à 9e classe)",
+      "period": "Weekly",
+      "group_label": "Défi",
+      "target_hint": 60,
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "sm-w-challenge-enemy-zone",
+      "name": "Tuer des joueurs adverses dans leur région (Verteron / Altgard)",
+      "period": "Weekly",
+      "group_label": "Défi",
+      "target_hint": 50,
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "sm-w-challenge-own-zone",
+      "name": "Tuer des joueurs adverses dans votre région (Altgard / Verteron)",
+      "period": "Weekly",
+      "group_label": "Défi",
+      "target_hint": 50,
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "sm-w-challenge-od",
+      "name": "Récupérer de l'Od dans l'Abysse",
+      "period": "Weekly",
+      "group_label": "Défi",
+      "target_hint": 30,
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "sm-w-challenge-abyss-bosses",
+      "name": "Éliminer des boss de l'Abysse",
+      "period": "Weekly",
+      "group_label": "Défi",
+      "target_hint": 5,
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "sm-w-challenge-battlefield",
+      "name": "Participer au champ de bataille",
+      "period": "Weekly",
+      "group_label": "Défi",
+      "target_hint": 3,
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "sm-s-abyss-hours",
+      "name": "Rester dans l'Abysse (heures)",
+      "period": "Season",
+      "group_label": "Abysse",
+      "target_hint": 60,
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "sm-s-abyss-hunt",
+      "name": "Chasser des monstres dans l'Abysse",
+      "period": "Season",
+      "group_label": "Abysse",
+      "target_hint": 10000,
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "sm-s-abyss-kill-players",
+      "name": "Tuer des joueurs du camp adverse",
+      "period": "Season",
+      "group_label": "Abysse",
+      "target_hint": 500,
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "sm-s-abyss-points",
+      "name": "Obtenir des points d'Abysse",
+      "period": "Season",
+      "group_label": "Abysse",
+      "target_hint": 1000000,
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "sm-s-abyss-siege",
+      "name": "Participer au Siège d'artefact jusqu'à la fin",
+      "period": "Season",
+      "group_label": "Abysse",
+      "target_hint": 15,
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "sm-s-abyss-siege-win",
+      "name": "Remporter un Siège d'artefact",
+      "period": "Season",
+      "group_label": "Abysse",
+      "target_hint": 10,
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "sm-s-abyss-flight",
+      "name": "Voler (minutes)",
+      "period": "Season",
+      "group_label": "Abysse",
+      "target_hint": 180,
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "sm-s-abyss-deaths",
+      "name": "Mourir face à des joueurs",
+      "period": "Season",
+      "group_label": "Abysse",
+      "target_hint": 30,
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "sm-s-arena-play",
+      "name": "Participer à l'Arène",
+      "period": "Season",
+      "group_label": "Arène",
+      "target_hint": 150,
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "sm-s-arena-wins",
+      "name": "Remporter des victoires dans l'Arène",
+      "period": "Season",
+      "group_label": "Arène",
+      "target_hint": 100,
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "sm-s-arena-kills",
+      "name": "Tuer un adversaire dans l'Arène",
+      "period": "Season",
+      "group_label": "Arène",
+      "target_hint": 300,
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "sm-s-arena-assists",
+      "name": "Réaliser des assistances dans l'Arène de coopération",
+      "period": "Season",
+      "group_label": "Arène",
+      "target_hint": 50,
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "sm-s-arena-deaths",
+      "name": "Mourir dans l'Arène",
+      "period": "Season",
+      "group_label": "Arène",
+      "target_hint": 20,
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "sm-s-trans-deus",
+      "name": "Base de recherche Deus : terminer le niveau",
+      "period": "Season",
+      "group_label": "Transcendance",
+      "scope": "Character",
+      "default_visible": false,
+      "tiers": [
+        {
+          "label": "Niveau 1"
+        },
+        {
+          "label": "Niveau 2"
+        },
+        {
+          "label": "Niveau 3"
+        }
+      ]
+    },
+    {
+      "id": "sm-s-trans-deus-fast",
+      "name": "Base de recherche Deus : terminer le niveau en moins de 7 min",
+      "period": "Season",
+      "group_label": "Transcendance",
+      "scope": "Character",
+      "default_visible": false,
+      "tiers": [
+        {
+          "label": "Niveau 1"
+        },
+        {
+          "label": "Niveau 2"
+        },
+        {
+          "label": "Niveau 3"
+        }
+      ]
+    },
+    {
+      "id": "sm-s-trans-deus-no-loss",
+      "name": "Base de recherche Deus : terminer le niveau sans perdre un membre",
+      "period": "Season",
+      "group_label": "Transcendance",
+      "scope": "Character",
+      "default_visible": false,
+      "tiers": [
+        {
+          "label": "Niveau 1"
+        },
+        {
+          "label": "Niveau 2"
+        },
+        {
+          "label": "Niveau 3"
+        }
+      ]
+    },
+    {
+      "id": "sm-s-trans-arkanis",
+      "name": "Arkanis fragmenté : terminer le niveau",
+      "period": "Season",
+      "group_label": "Transcendance",
+      "scope": "Character",
+      "default_visible": false,
+      "tiers": [
+        {
+          "label": "Niveau 1"
+        },
+        {
+          "label": "Niveau 2"
+        },
+        {
+          "label": "Niveau 3"
+        }
+      ]
+    },
+    {
+      "id": "sm-s-trans-arkanis-fast",
+      "name": "Arkanis fragmenté : terminer le niveau en moins de 7 min",
+      "period": "Season",
+      "group_label": "Transcendance",
+      "scope": "Character",
+      "default_visible": false,
+      "tiers": [
+        {
+          "label": "Niveau 1"
+        },
+        {
+          "label": "Niveau 2"
+        },
+        {
+          "label": "Niveau 3"
+        }
+      ]
+    },
+    {
+      "id": "sm-s-trans-arkanis-no-loss",
+      "name": "Arkanis fragmenté : terminer le niveau sans perdre un membre",
+      "period": "Season",
+      "group_label": "Transcendance",
+      "scope": "Character",
+      "default_visible": false,
+      "tiers": [
+        {
+          "label": "Niveau 1"
+        },
+        {
+          "label": "Niveau 2"
+        },
+        {
+          "label": "Niveau 3"
+        }
+      ]
+    },
+    {
+      "id": "sm-s-nightmare-pinopi",
+      "name": "Pinopi le gardien des portes",
+      "period": "Season",
+      "group_label": "Cauchemar",
+      "scope": "Character",
+      "default_visible": false,
+      "tiers": [
+        {
+          "label": "Niveau 1"
+        },
+        {
+          "label": "Niveau 2"
+        },
+        {
+          "label": "Niveau 3"
+        },
+        {
+          "label": "Niveau 4"
+        },
+        {
+          "label": "Niveau 5"
+        },
+        {
+          "label": "Niveau 6"
+        },
+        {
+          "label": "Niveau 7"
+        },
+        {
+          "label": "Niveau 8"
+        },
+        {
+          "label": "Niveau 9"
+        },
+        {
+          "label": "Niveau 10"
+        },
+        {
+          "label": "Niveau 10 en moins d'1 min"
+        }
+      ]
+    },
+    {
+      "id": "sm-s-nightmare-feruk",
+      "name": "Feruk furieux",
+      "period": "Season",
+      "group_label": "Cauchemar",
+      "scope": "Character",
+      "default_visible": false,
+      "tiers": [
+        {
+          "label": "Niveau 1"
+        },
+        {
+          "label": "Niveau 2"
+        },
+        {
+          "label": "Niveau 3"
+        },
+        {
+          "label": "Niveau 4"
+        },
+        {
+          "label": "Niveau 5"
+        },
+        {
+          "label": "Niveau 6"
+        },
+        {
+          "label": "Niveau 7"
+        },
+        {
+          "label": "Niveau 8"
+        },
+        {
+          "label": "Niveau 9"
+        },
+        {
+          "label": "Niveau 10"
+        },
+        {
+          "label": "Niveau 10 en moins d'1 min"
+        }
+      ]
+    },
+    {
+      "id": "sm-s-nightmare-fafnir",
+      "name": "Sang toxique de Fafnir",
+      "period": "Season",
+      "group_label": "Cauchemar",
+      "scope": "Character",
+      "default_visible": false,
+      "tiers": [
+        {
+          "label": "Niveau 1"
+        },
+        {
+          "label": "Niveau 2"
+        },
+        {
+          "label": "Niveau 3"
+        },
+        {
+          "label": "Niveau 4"
+        },
+        {
+          "label": "Niveau 5"
+        },
+        {
+          "label": "Niveau 6"
+        },
+        {
+          "label": "Niveau 7"
+        },
+        {
+          "label": "Niveau 8"
+        },
+        {
+          "label": "Niveau 9"
+        },
+        {
+          "label": "Niveau 10"
+        },
+        {
+          "label": "Niveau 10 en moins d'1 min"
+        }
+      ]
+    },
+    {
+      "id": "sm-s-nightmare-giselle",
+      "name": "Giselle le spectre hostile",
+      "period": "Season",
+      "group_label": "Cauchemar",
+      "scope": "Character",
+      "default_visible": false,
+      "tiers": [
+        {
+          "label": "Niveau 1"
+        },
+        {
+          "label": "Niveau 2"
+        },
+        {
+          "label": "Niveau 3"
+        },
+        {
+          "label": "Niveau 4"
+        },
+        {
+          "label": "Niveau 5"
+        },
+        {
+          "label": "Niveau 6"
+        },
+        {
+          "label": "Niveau 7"
+        },
+        {
+          "label": "Niveau 8"
+        },
+        {
+          "label": "Niveau 9"
+        },
+        {
+          "label": "Niveau 10"
+        },
+        {
+          "label": "Niveau 10 en moins d'1 min"
+        }
+      ]
+    },
+    {
+      "id": "sm-s-nightmare-notun",
+      "name": "Notun le gardien de la Forteresse",
+      "period": "Season",
+      "group_label": "Cauchemar",
+      "scope": "Character",
+      "default_visible": false,
+      "tiers": [
+        {
+          "label": "Niveau 1"
+        },
+        {
+          "label": "Niveau 2"
+        },
+        {
+          "label": "Niveau 3"
+        },
+        {
+          "label": "Niveau 4"
+        },
+        {
+          "label": "Niveau 5"
+        },
+        {
+          "label": "Niveau 6"
+        },
+        {
+          "label": "Niveau 7"
+        },
+        {
+          "label": "Niveau 8"
+        },
+        {
+          "label": "Niveau 9"
+        },
+        {
+          "label": "Niveau 10"
+        },
+        {
+          "label": "Niveau 10 en moins d'1 min"
+        }
+      ]
+    },
+    {
+      "id": "sm-s-nightmare-gerod",
+      "name": "Gerod muté",
+      "period": "Season",
+      "group_label": "Cauchemar",
+      "scope": "Character",
+      "default_visible": false,
+      "tiers": [
+        {
+          "label": "Niveau 1"
+        },
+        {
+          "label": "Niveau 2"
+        },
+        {
+          "label": "Niveau 3"
+        },
+        {
+          "label": "Niveau 4"
+        },
+        {
+          "label": "Niveau 5"
+        },
+        {
+          "label": "Niveau 6"
+        },
+        {
+          "label": "Niveau 7"
+        },
+        {
+          "label": "Niveau 8"
+        },
+        {
+          "label": "Niveau 9"
+        },
+        {
+          "label": "Niveau 10"
+        },
+        {
+          "label": "Niveau 10 en moins d'1 min"
+        }
+      ]
+    },
+    {
+      "id": "sm-s-nightmare-zikel",
+      "name": "Apparition de Zikel",
+      "period": "Season",
+      "group_label": "Cauchemar",
+      "scope": "Character",
+      "default_visible": false,
+      "tiers": [
+        {
+          "label": "Niveau 1"
+        },
+        {
+          "label": "Niveau 2"
+        },
+        {
+          "label": "Niveau 3"
+        },
+        {
+          "label": "Niveau 4"
+        },
+        {
+          "label": "Niveau 5"
+        },
+        {
+          "label": "Niveau 6"
+        },
+        {
+          "label": "Niveau 7"
+        },
+        {
+          "label": "Niveau 8"
+        },
+        {
+          "label": "Niveau 9"
+        },
+        {
+          "label": "Niveau 10"
+        },
+        {
+          "label": "Niveau 10 en moins d'1 min"
+        }
+      ]
+    },
+    {
+      "id": "sm-s-challenge-altar",
+      "name": "Épreuve d'Éveil : terminer l'Autel des Cauchemars",
+      "period": "Season",
+      "group_label": "Défi",
+      "target_hint": 10,
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "sm-s-challenge-sanctuary",
+      "name": "Épreuve d'Éveil : terminer le Sanctuaire de la haine",
+      "period": "Season",
+      "group_label": "Défi",
+      "target_hint": 10,
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "sm-s-challenge-score",
+      "name": "Épreuve d'Éveil : score final de 6 000 points",
+      "period": "Season",
+      "group_label": "Défi",
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "sm-s-challenge-commanders",
+      "name": "Tuer des commandants adverses (commandant, commandant suprême)",
+      "period": "Season",
+      "group_label": "Défi",
+      "target_hint": 5,
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "sm-s-challenge-generals",
+      "name": "Tuer des généraux adverses (général, général en chef)",
+      "period": "Season",
+      "group_label": "Défi",
+      "target_hint": 10,
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "sm-s-challenge-officers",
+      "name": "Tuer des officiers adverses (1 à 5 étoiles)",
+      "period": "Season",
+      "group_label": "Défi",
+      "target_hint": 30,
+      "scope": "Character",
+      "default_visible": false
+    },
+    {
+      "id": "sm-s-challenge-soldiers",
+      "name": "Tuer des soldats adverses (1re à 9e classe)",
+      "period": "Season",
+      "group_label": "Défi",
+      "target_hint": 250,
+      "scope": "Character",
+      "default_visible": false
     }
   ],
   "archived": {
@@ -1097,8 +1930,6 @@
     "tasks": {}
   },
   "changelog": [
-    "rev 1 : catalogue initial (noms français des boss d'Altgard, anglais conservés pour le scan)",
-    "rev 2 : noms français lus en jeu (Altgard, Reshanta inférieure), début des noms coupés en alias OCR, boss de Verteron (Élyséens)",
-    "rev 3 : boss de Reshanta moyenne retirés (pas encore en version globale)"
+    "rev 1 : catalogue initial — boss d'Altgard, de Reshanta inférieure et de Verteron (noms français lus en jeu), événements, serveurs par faction, tâches quotidiennes et hebdomadaires, missions de saison"
   ]
 }
