@@ -858,7 +858,7 @@
       "respawn": {
         "kind": "Schedule",
         "tz": "server",
-        "duration_min": 10,
+        "duration_min": 5,
         "rules": [
           {
             "type": "every",
@@ -878,7 +878,7 @@
       "respawn": {
         "kind": "Schedule",
         "tz": "server",
-        "duration_min": 10,
+        "duration_min": 5,
         "rules": [
           {
             "type": "every",
