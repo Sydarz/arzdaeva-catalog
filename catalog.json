@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "rev": 1,
+  "rev": 2,
   "game_patch": "Global S1 — 2026-10",
-  "published_at": "2026-10-24",
+  "published_at": "2026-10-26",
   "server_tz": "Europe/Paris",
   "resets": {
     "daily": "07:00",
@@ -403,6 +403,7 @@
     {
       "id": "silent-dartan",
       "name": "Dartan la silencieuse",
+      "default_favorite": true,
       "name_en": "Silent Dartan",
       "region": "Altgard",
       "zone": "Forêt de purification",
@@ -417,6 +418,7 @@
     {
       "id": "soul-ruler-kashapa",
       "name": "Kashapa le dominateur des âmes",
+      "default_favorite": true,
       "name_en": "Soul Ruler Kashapa",
       "region": "Altgard",
       "zone": "Cimetière de Pafnite",
@@ -434,6 +436,7 @@
     {
       "id": "high-commander-lagta",
       "name": "Haut Commandant Lagta",
+      "default_favorite": true,
       "name_en": "High Commander Lagta",
       "region": "Altgard",
       "zone": "Forteresse de Ragta",
@@ -448,6 +451,7 @@
     {
       "id": "immortal-gartua",
       "name": "Gartua de l'immortalité",
+      "default_favorite": true,
       "name_en": "Immortal Gartua",
       "region": "Altgard",
       "zone": "Île de l'immortalité",
@@ -2729,6 +2733,7 @@
     "tasks": {}
   },
   "changelog": [
-    "rev 1 : catalogue d'ArzDaeva 1.0 — boss d'Altgard, de Reshanta inférieure et de Verteron (noms français lus en jeu), événements, serveurs par faction, tâches quotidiennes et hebdomadaires, missions de saison relevées en jeu (titre et phases)"
+    "rev 1 : catalogue d'ArzDaeva 1.0 — boss d'Altgard, de Reshanta inférieure et de Verteron (noms français lus en jeu), événements, serveurs par faction, tâches quotidiennes et hebdomadaires, missions de saison relevées en jeu (titre et phases)",
+    "rev 2 : Gartua de l'immortalité, Haut Commandant Lagta, Kashapa le dominateur des âmes et Dartan la silencieuse (Altgard) favoris par défaut"
   ]
 }
