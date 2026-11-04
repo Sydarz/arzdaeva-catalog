@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "rev": 2,
-  "game_patch": "Global S1 — 2026-10",
-  "published_at": "2026-10-26",
+  "rev": 3,
+  "game_patch": "Global S1 — mise à jour du 2026-11-04",
+  "published_at": "2026-11-04",
   "server_tz": "Europe/Paris",
   "resets": {
     "daily": "07:00",
@@ -445,7 +445,7 @@
       "faction": "Asmodian",
       "respawn": {
         "kind": "AfterKill",
-        "minutes": 720
+        "minutes": 660
       }
     },
     {
@@ -460,7 +460,7 @@
       "faction": "Asmodian",
       "respawn": {
         "kind": "AfterKill",
-        "minutes": 720
+        "minutes": 660
       }
     },
     {
@@ -472,8 +472,17 @@
       "category": "Abyss",
       "faction": "Both",
       "respawn": {
-        "kind": "AfterKill",
-        "minutes": 720
+        "kind": "Schedule",
+        "tz": "server",
+        "rules": [
+          {
+            "type": "daily",
+            "times": [
+              "10:30",
+              "22:30"
+            ]
+          }
+        ]
       },
       "default_favorite": true
     },
@@ -537,7 +546,6 @@
           {
             "type": "weekly",
             "days": [
-              "Mon",
               "Thu",
               "Sat"
             ],
@@ -560,7 +568,6 @@
           {
             "type": "weekly",
             "days": [
-              "Mon",
               "Thu",
               "Sat"
             ],
@@ -583,7 +590,6 @@
           {
             "type": "weekly",
             "days": [
-              "Mon",
               "Thu",
               "Sat"
             ],
@@ -814,7 +820,7 @@
       "faction": "Elyos",
       "respawn": {
         "kind": "AfterKill",
-        "minutes": 720
+        "minutes": 660
       }
     },
     {
@@ -850,7 +856,7 @@
       "faction": "Elyos",
       "respawn": {
         "kind": "AfterKill",
-        "minutes": 720
+        "minutes": 660
       }
     },
     {
@@ -927,7 +933,6 @@
           {
             "type": "weekly",
             "days": [
-              "Mon",
               "Thu",
               "Sat"
             ],
@@ -1025,6 +1030,13 @@
       "name": "Vocations : consignes",
       "period": "Weekly",
       "scope": "Account"
+    },
+    {
+      "id": "abyss-corridors",
+      "name": "Corridors abyssaux",
+      "period": "Weekly",
+      "target_hint": 2,
+      "scope": "Character"
     },
     {
       "id": "daeva-pass",
@@ -2734,6 +2746,7 @@
   },
   "changelog": [
     "rev 1 : catalogue d'ArzDaeva 1.0 — boss d'Altgard, de Reshanta inférieure et de Verteron (noms français lus en jeu), événements, serveurs par faction, tâches quotidiennes et hebdomadaires, missions de saison relevées en jeu (titre et phases)",
-    "rev 2 : Gartua de l'immortalité, Haut Commandant Lagta, Kashapa le dominateur des âmes et Dartan la silencieuse (Altgard) favoris par défaut"
+    "rev 2 : Gartua de l'immortalité, Haut Commandant Lagta, Kashapa le dominateur des âmes et Dartan la silencieuse (Altgard) favoris par défaut",
+    "rev 3 : mise à jour du 4 novembre — Siège des artefacts et exécuteurs le jeudi et le samedi seulement, Gartua et Lagta réapparaissent en 11 h, Agro le roi des esprits à heure fixe (10:30 et 22:30) ; tâche hebdomadaire « Corridors abyssaux » (2 par semaine)"
   ]
 }
